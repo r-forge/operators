@@ -1,0 +1,10 @@
+Package: operators
+Type: Package
+Title: Additional operators for the R language
+Version: 0.0-9
+Date: 2008-07-24
+Author: Romain Francois <rfrancois@mango-solutions.com>
+Maintainer: Mango Solutions <support@mango-solutions.com>
+Description: A set of operators for common tasks such 
+             as regex manipulation.
+License: GPL version 2

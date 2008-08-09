@@ -1,0 +1,8 @@
+exportPattern( "^[%][^%]+[%]$" )
+
+S3method( "%but%", "default" )
+S3method( "%but%", "list" )
+S3method( "%but%", "character" )
+
+S3method( "%+=%", "default" )
+
