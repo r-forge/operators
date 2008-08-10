@@ -2,20 +2,24 @@
 
 ..redirect <- function(object,file,type,append,print=getOption("operators.print")){
   print <- match.fun(print)
-  if( is.character(file) ) file <- file( file, open = "wt")
-  if( type %in% c("output", "message") ) sink( file , append = append, type = type)
-  else{
-     sink( file , append = append, type = "output")
-     sink( file , append = append, type = "message")
-  }
-  out <- object
-  if(!is.null(out)) print(out)
-  if( type %in% c("output", "message") ) sink(type = type)
-  else{
-     sink( type = "output")
-     sink( type = "message")
-  }
-  close(file)  
+  # if( is.character(file) ) file <- file( file, open = "wt")
+  # if( type %in% c("output", "message") ) sink( file , append = append, type = type)
+  # else{
+  #    sink( file , append = append, type = "output")
+  #    sink( file , append = append, type = "message")
+  # }
+  # out <- object
+  # if(!is.null(out)) print(out)
+  # if( type %in% c("output", "message") ) sink(type = type)
+  # else{
+  #    sink( type = "output")
+  #    sink( type = "message")
+  # }
+  # close(file)
+
+  # TODO: handle type = "message" here
+  invisible( capture.output( object, file = file ) )   
+  
 }
 
 ..readfromfile <- function(object, file, append = FALSE, objname, envir, verbose = getOption("verbose")){
