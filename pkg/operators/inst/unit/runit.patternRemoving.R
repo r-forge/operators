@@ -25,7 +25,7 @@ test.patternFilterAndRemove <- function( ){
 }
 
 test.ogrep <- function() {
-  cols <- c( "blue.col", "red.stuff" )
+  cols <- c( "blue.col", "pink", "red.stuff" )
   res <- cols %o~|% "\\..*$"
   checkEquals( length(res) , 2 , checkNames = FALSE, msg = "" )
   checkEquals( res[1] , ".col"  , checkNames = FALSE, msg = "" )
@@ -35,5 +35,5 @@ test.ogrep <- function() {
   checkEquals( length(res) , 2 , checkNames = FALSE, msg = "" )
   checkEquals( res[1] , "col"  , checkNames = FALSE, msg = "" )
   checkEquals( res[2] , "stuff"  , checkNames = FALSE, msg = "" )
-  
 }
+
