@@ -3,5 +3,6 @@
   options( operators.gsub = "epg" )
   options( operators.strsplit = "ep" )
   options( operators.print = "print" )
+	options( operators.o.nomatch = "" )
 }
 
