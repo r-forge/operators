@@ -1,25 +1,26 @@
 ### send to file
 
-..redirect <- function(object,file,type,append,print=getOption("operators.print")){
-  print <- match.fun(print)
-  # if( is.character(file) ) file <- file( file, open = "wt")
-  # if( type %in% c("output", "message") ) sink( file , append = append, type = type)
-  # else{
-  #    sink( file , append = append, type = "output")
-  #    sink( file , append = append, type = "message")
-  # }
-  # out <- object
-  # if(!is.null(out)) print(out)
-  # if( type %in% c("output", "message") ) sink(type = type)
-  # else{
-  #    sink( type = "output")
-  #    sink( type = "message")
-  # }
-  # close(file)
-
-  # TODO: handle type = "message" here
-  invisible( capture.output( object, file = file ) )   
-  
+..redirect <- function(object,file,type = c("output", "message", "both"),append){
+	type <- match.arg( type )
+  if( is.character(file) ) file <- file( file, open = if(append) "at" else "wt")
+  if( type %in% c("output", "message") ) sink( file , append = append, type = type)
+  else{
+     sink( file, type = "output")
+     sink( file, type = "message")
+  }
+	# borrow the capture function in svMisc instead of all that
+	# or should I create a text connection, write the expression in, and source it ?
+  txt <- capture.output( 
+	  eval( parse( text = deparse(substitute(object))) )
+		)
+	if( type %in% c("output", "both") ) cat( txt, sep = "\n" )	
+	if( type %in% c("output", "message") ) sink(type = type)
+  else{            
+     sink( type = "output")
+     sink( type = "message")
+  }
+  close(file)
+	
 }
 
 ..readfromfile <- function(object, file, append = FALSE, objname, envir, verbose = getOption("verbose")){
