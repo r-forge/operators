@@ -1,10 +1,11 @@
 Package: operators
 Type: Package
-Title: Additional operators for the R language
-Version: 0.0-10
-Date: 2008-08-10
-Author: Romain Francois <rfrancois@mango-solutions.com>
-Maintainer: Mango Solutions <support@mango-solutions.com>
-Description: A set of operators for common tasks such 
-             as regex manipulation.
-License: GPL version 2
+Title: Additional binary operators for the R language
+Version: 0.0-14
+Date: 2008-09-06
+Author: Romain Francois <francoisromain@free.fr>
+Maintainer: Romain Francois <francoisromain@free.fr>
+Suggests: RUnit
+Description: A set of operators for common tasks such as regex
+        manipulation.
+License: GPL version 3
