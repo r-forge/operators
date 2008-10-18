@@ -1,7 +1,7 @@
 \name{withOptions}
 \alias{options}
 
-\title{ Alternative option mechanism based on \code{with} }
+\title{ Alternative option mechanism}
 \description{
   \code{options} is a slight rework on \code{\link[base]{options}} that 
 	gives a S3 class \code{options} to the result. This allows the definition
