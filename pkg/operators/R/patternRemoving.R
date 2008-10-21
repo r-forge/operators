@@ -10,9 +10,15 @@
   (txt %~|% pattern) %-~% pattern
 }
 
-# TODO: deal with multiple () in the pattern
 `%o~|%` <- function(txt, pattern){
-  if( pattern %!~% "\\(.*?\\)" ) {
+  txt <- txt %~|% pattern
+	txt %o~% pattern
+	
+}
+
+`%o~%` <- function(txt, pattern){
+	if( txt %!~+% pattern) return(NULL)
+	if( pattern %!~% "\\(.*?\\)" ) {
 		pattern <- sprintf("(%s)", pattern) 
 	} 
 	if( pattern %!~% "^\\^" ){
@@ -31,6 +37,8 @@
 		  gsub( pattern, sprintf("\\%d", i), txt, perl = TRUE ), 
 			getOption("operators.o.nomatch") )
 	}
+	out <- do.call( cbind, out )
+	rownames( out ) <- txt
 	out
 }
 
