@@ -20,7 +20,7 @@ test.patternFilterAndRemove <- function( ){
   checkEquals( res , "lue"  , checkNames = FALSE, msg = "" )
   
   res <- cols %-~|% "e"
-  checkEquals( res , c("blu", "rd"  , checkNames = FALSE, msg = "" )
+  checkEquals( res , c("blu", "rd" ) , checkNames = FALSE, msg = "" )
   
 }
 
