@@ -13,7 +13,6 @@
 `%o~|%` <- function(txt, pattern){
   txt <- txt %~|% pattern
 	txt %o~% pattern
-	
 }
 
 `%o~%` <- function(txt, pattern){
@@ -34,7 +33,7 @@
 	out <- rep( list(NULL), n )
 	for( i in 1:n ){
 		out[[i]] <- ifelse( txt %~% pattern, 
-		  gsub( pattern, sprintf("\\%d", i), txt, perl = TRUE ), 
+			gsub( pattern, sprintf("\\%d", i), txt, perl = TRUE ), 
 			getOption("operators.o.nomatch") )
 	}
 	out <- do.call( cbind, out )
