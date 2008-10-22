@@ -1,5 +1,6 @@
 \name{withOptions}
 \alias{options}
+\alias{with.options}
 
 \title{ Alternative option mechanism}
 \description{
