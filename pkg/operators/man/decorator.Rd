@@ -1,6 +1,7 @@
 \name{character decorator}
 \alias{\%x=\%}
 \alias{\%x=|\%}
+\alias{strrep}
 \title{ Creates string decorators by repeating a pattern }
 \description{
   Creates string decorators by repeating a pattern
@@ -8,14 +9,14 @@
   a given number of character
 }
 \usage{
-x \%x=\% ntimes
-x \%x=|\% ntimes
+txt \%x=\% n
+txt \%x=|\% length.out
+strrep( txt, n, length.out=getOption("width") )
 }
 \arguments{
-  \item{x}{ Pattern to repeat }
-  \item{ntimes}{ Number of times to repeat the pattern (for the
-    \code{\%x=\%} operator or number of character the output should 
-    be (for the \code{\%x=|\%} operator) }
+  \item{txt}{ Pattern to repeat }
+  \item{n}{ Number of times to repeat the pattern}
+	\item{length.out}{number of character the output should be}
 }
 \value{
   A character string
@@ -25,6 +26,9 @@ x \%x=|\% ntimes
 \examples{
   "=" \%x=\% 80
   "<-+->" \%x=|\% 80
+	strrep( ".-", n = 10 )
+	strrep( ".-", length.out = 50 )
+	strrep( ".-" )
 }
 \keyword{ manip }
 
