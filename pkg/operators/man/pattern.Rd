@@ -45,7 +45,7 @@
   \code{extended} options. See \code{\link{\%but\%}} for details.
 }
 
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{grep}, \link{gsub} }
 \examples{                        
   txt <- c("arm","foot","lefroo", "bafoobar")

@@ -28,7 +28,7 @@
   the \code{operators.regexpr} option declared with this package. 
   See \code{\link{\%but\%}} for a description of this mecanism. 
 }
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{grep}, \link{gsub} }
 \examples{                        
   

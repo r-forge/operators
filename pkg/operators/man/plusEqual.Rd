@@ -18,7 +18,7 @@
   The operator \code{\%+=\%} is S3-generic with a single default 
   method implemented at the moment.  
 }
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \examples{                        
   
   ### standard examples

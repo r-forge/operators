@@ -53,7 +53,7 @@
   function to only replace the first match. \emph{At the moment "/" cannot be used 
   in the regular expressions}.
 }
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{grep}, \link{gsub} }
 \examples{                        
   txt <- c("arm","foot","lefroo", "bafoobar")

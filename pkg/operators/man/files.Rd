@@ -58,7 +58,7 @@
   content of the file to the object.
   
 }
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{file} }
 \examples{                        
   \dontrun{

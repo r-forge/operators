@@ -23,7 +23,7 @@
   by default. See \code{\link{\%but\%}} for a description.
 }
 
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{grep}, \link{gsub} }
 \examples{                        
   "Separate these  words by spaces" \%/~\% " +"

@@ -36,7 +36,7 @@
   
 }
 
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{args}, \link{formals} }
 \examples{        
   ### default method, nothing is done

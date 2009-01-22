@@ -18,6 +18,9 @@ txt \%o~\% pattern
 	as the length of txt and as many columns as chunks of regular expressions.
 }
 \author{ Romain Francois \email{francoisromain@free.fr} }
-\examples{}
+\examples{
+	x <- c("foobar","barfooooooooooooobar")
+  x \%o~\% "fo+"
+}
 \keyword{ manip }
 

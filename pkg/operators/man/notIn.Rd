@@ -14,7 +14,7 @@
 \value{
   Logical vector, negation of the \code{\%in\%} operators on the same arguments.
 }
-\author{ Romain Francois <rfrancois@mango-solutions.com> }
+\author{ Romain Francois <francoisromain@free.fr> }
 \examples{                        
   1:10 \%!in\% c(1,3,5,9)  
 }
