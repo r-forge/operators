@@ -59,6 +59,8 @@
 }
 
 print.unixoutput <- function( x, ...){
-  cat( x, sep = "\n", ...) 
+  if( length(x) ){
+	cat( x, sep = "\n", ...)
+  }
 }
 

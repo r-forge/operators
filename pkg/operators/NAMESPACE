@@ -43,3 +43,5 @@ S3method( "print", "withOptions" )
 
 export( "strrep" )
 
+S3method( "print", "unixoutput" )
+

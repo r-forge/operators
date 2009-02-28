@@ -5,7 +5,7 @@
 \title{ Creates string decorators by repeating a pattern }
 \description{
   Creates string decorators by repeating a pattern
-  either a given numner of times or so that it takes 
+  either a given number of times or so that it takes 
   a given number of character
 }
 \usage{
