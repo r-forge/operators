@@ -1,8 +1,8 @@
 Package: operators
 Type: Package
 Title: Additional binary operators for the R language
-Version: 0.1-1
-Date: 2009-02-28
+Version: 0.1-2
+Date: 2009-05-20
 Author: Romain Francois <francoisromain@free.fr>
 Maintainer: Romain Francois <francoisromain@free.fr>
 Suggests: RUnit

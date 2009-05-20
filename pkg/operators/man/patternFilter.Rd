@@ -15,11 +15,11 @@
   \item{rx}{ regular expression }
 }
 \value{
-  \code{\%~|\%} : a character vector containing all the elements of \code{x}
+  '\code{\%~|\%}' : a character vector containing all the elements of \code{x}
   that match the regular expression \code{rx} or \code{NULL} if there 
   is no match.
   
-  \code{\%!~|\%} : a character vector containing all the elements of 
+  '\code{\%!~|\%}' : a character vector containing all the elements of 
   \code{x} that \emph{do not} match the regular expression \code{rx}.
 }
 \note{
@@ -43,10 +43,10 @@
   # using perl regular expressions
   
   ### not necessary since p is in the default of the package
-  old.op <- options( operators.regepr = "p" ) 
-  ( a4 <- grep( "blue[^\\d]*", cols, value = TRUE, perl = TRUE  ) )
-  ( a5 <- cols \%~|\% "blue[^\\d]*$" )
-  options( old.op )    
+  with( options( operators.regexpr = "p" ), { 
+  	( a4 <- grep( "blue[^\\d]*", cols, value = TRUE, perl = TRUE  ) )
+  	( a5 <- cols \%~|\% "blue[^\\d]*$" )
+  })
   
   ### blue colors that contain a r
   cols \%~|\% "blue" \%~|\% "r"
