@@ -4,6 +4,8 @@
 
 loadOptions <- function( ) {
 	opt.file <- system.file( "options", "options.R", package = "operators" )
-	source( opt.file )
+	if( file.exists( opt.file ) ){
+		source( opt.file )
+	}
 }
 
