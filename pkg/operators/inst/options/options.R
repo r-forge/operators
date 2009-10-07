@@ -1,6 +1,6 @@
-options( operators.regexpr = "ep" )
-options( operators.gsub = "epg" )
-options( operators.strsplit = "ep" )
+options( operators.regexpr = "p" )
+options( operators.gsub = "pg" )
+options( operators.strsplit = "p" )
 options( operators.print = "print" )
 options( operators.o.nomatch = "" )
 
