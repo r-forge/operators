@@ -17,9 +17,9 @@ with.options <- function( data, expr, ...){
 
 print.withOptions <- function( x, verbose = getOption("verbose"), ...){
 	old.op <- do.call( base:::options, attr(x, "withOptions" ) )
+	on.exit(base:::options(old.op))
 	if(verbose) cat ( "with options", paste( "\n", names(old.op), ":", old.op) ) 
 	class( x ) <- setdiff( class(x), "withOptions" )
 	print( x, ... )
-	base:::options(old.op) 
 }
 

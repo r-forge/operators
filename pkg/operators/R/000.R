@@ -1,6 +1,6 @@
 # bring (a less efficient version of) grepl from the future
 if( version$major > 2 | ( version$major == 2 && as.numeric(version$minor) >= 9) ){
-	grepl <- function (pattern, x, ignore.case = FALSE, extended = TRUE, perl = FALSE, 
+	grepl <- function (pattern, x, ignore.case = FALSE, perl = FALSE, 
 	    fixed = FALSE, useBytes = FALSE) {
 		
 		call <- match.call( )

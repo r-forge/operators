@@ -60,11 +60,13 @@
 }
 
 ### gsub or sub depending on the global argument
-..gsub <- function(pattern, replacement, x, ignore.case = FALSE, extended = TRUE, 
+..gsub <- function(pattern, replacement, x, ignore.case = FALSE, 
     perl = FALSE, fixed = FALSE, useBytes = FALSE, global=TRUE){
   
-   if(global) gsub(pattern,replacement, x, ignore.case, extended, perl, fixed, useBytes)
-   else sub(pattern,replacement, x, ignore.case, extended, perl, fixed, useBytes)
+   if(global) gsub(pattern = pattern ,replacement = replacement, x = x, 
+   	ignore.case = ignore.case, perl = perl , fixed = fixed, useBytes = useBytes)
+   else sub(pattern = pattern,replacement = replacement, x = x, 
+   	ignore.case = ignore.case, perl = perl, fixed = fixed, useBytes = useBytes)
 }
 
 

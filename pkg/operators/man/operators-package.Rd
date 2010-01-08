@@ -12,9 +12,9 @@ Additional binary operators for R
 \tabular{ll}{
 Package: \tab operators\cr
 Type: \tab Package\cr
-Version: \tab 0.0-16\cr
-Date: \tab 2009-01-22\cr
-License: \tab GPL3\cr
+Version: \tab 0.1-5\cr
+Date: \tab 2009-10-07\cr
+License: \tab GPL-3\cr
 }
 }
 \author{
