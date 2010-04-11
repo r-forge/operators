@@ -24,11 +24,11 @@ strrep( txt, n, length.out=getOption("width") )
 \author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \code{\link{paste}}, \code{\link{sprintf}}, \code{\link{rep}} }
 \examples{
-  "=" \%x=\% 80
-  "<-+->" \%x=|\% 80
-	strrep( ".-", n = 10 )
-	strrep( ".-", length.out = 50 )
-	strrep( ".-" )
+"=" \%x=\% 80
+"<-+->" \%x=|\% 80
+strrep( ".-", n = 10 )
+strrep( ".-", length.out = 50 )
+strrep( ".-" )
 }
 \keyword{ manip }
 

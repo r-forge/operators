@@ -1,12 +1,12 @@
 Package: operators
 Type: Package
 Title: Additional binary operators for the R language
-Version: 0.1-5
-Date: 2009-10-07
-Author: Romain Francois <francoisromain@free.fr>
-Maintainer: Romain Francois <francoisromain@free.fr>
+Version: 0.1-6
+Date: 2010-04-11
+Author: Romain Francois <romain@r-enthusiasts.com>
+Maintainer: Romain Francois <romain@r-enthusiasts.com>
 Suggests: RUnit
-Description: A set of operators for common tasks such as regex
-        manipulation.
+Description: A set of operators for common tasks such as regex manipulation.
 License: GPL-3
+URL: http://romainfrancois.blog.free.fr
 

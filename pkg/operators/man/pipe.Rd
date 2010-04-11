@@ -1,4 +1,4 @@
-\name{\%|\%}
+\name{pipe}
 \alias{\%|\%}
 \title{ Pipe an R object to a unix command }
 \description{

@@ -79,7 +79,7 @@
   
   ## needs perl regular expression for the \\\\d, see %but%
   with( options( operators.regexpr = "p" ), {
-  	cols[ cols \%!~\% "\\d$" ]
+  	cols[ cols \%!~\% "\\\\d$" ]
   } )
   
 }

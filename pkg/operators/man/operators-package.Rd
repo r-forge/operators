@@ -12,15 +12,15 @@ Additional binary operators for R
 \tabular{ll}{
 Package: \tab operators\cr
 Type: \tab Package\cr
-Version: \tab 0.1-5\cr
-Date: \tab 2009-10-07\cr
+Version: \tab 0.1-6\cr
+Date: \tab 2010-04-11\cr
 License: \tab GPL-3\cr
 }
 }
 \author{
-Romain Francois <francoisromain@free.fr>
+Romain Francois <romain@r-enthusiasts.com>
 
-Maintainer: Romain Francois <francoisromain@free.fr>
+Maintainer: Romain Francois <romain@r-enthusiasts.com>
 }
 \keyword{ package }
 

@@ -17,7 +17,7 @@ x \%of\% y
 \author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \code{\link{inherits}} }
 \examples{
-  iris \%of\% "data.frame"
+iris \%of\% "data.frame"
 }
 \keyword{ manip }
 

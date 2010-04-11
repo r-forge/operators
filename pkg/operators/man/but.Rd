@@ -39,18 +39,17 @@
 \author{ Romain Francois <francoisromain@free.fr> }
 \seealso{ \link{args}, \link{formals} }
 \examples{        
-  ### default method, nothing is done
-  rnorm \%but\% 44
-  
-  ### character method, operating on logical arguments
-  grep \%but\% "pf"     # grep, with perl and fixed set to TRUE
-  grep \%but\% "i-e"    # grep, ignoring the case but not using extended regular expressions
-  ( grep \%but\% "vp" )( "blue", colors() )
-  
-  ### list method 
-  rnorm \%but\% list( mean = 3 )
-  rnorm \%but\% list( nonsense = 4 )
+### default method, nothing is done
+rnorm \%but\% 44
 
+### character method, operating on logical arguments
+grep \%but\% "pf"     # grep, with perl and fixed set to TRUE
+grep \%but\% "i-e"    # grep, ignoring the case but not using extended regular expressions
+( grep \%but\% "vp" )( "blue", colors() )
+
+### list method 
+rnorm \%but\% list( mean = 3 )
+rnorm \%but\% list( nonsense = 4 )
 }
 \keyword{ utilities }
 

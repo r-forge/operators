@@ -19,8 +19,8 @@ txt \%o~\% pattern
 }
 \author{ Romain Francois \email{francoisromain@free.fr} }
 \examples{
-	x <- c("foobar","barfooooooooooooobar")
-  x \%o~\% "fo+"
+x <- c("foobar","barfooooooooooooobar")
+x \%o~\% "fo+"
 }
 \keyword{ manip }
 
