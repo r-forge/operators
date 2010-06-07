@@ -3,8 +3,8 @@ Type: Package
 Title: Additional binary operators for the R language
 Version: 0.1-6
 Date: 2010-04-11
-Author: Romain Francois <romain@r-enthusiasts.com>
-Maintainer: Romain Francois <romain@r-enthusiasts.com>
+Author: Romain Francois and Christopher Brown
+Maintainer: Romain Francois and Christopher Brown <operators-authors@r-enthusiasts.com>
 Suggests: RUnit
 Description: A set of operators for common tasks such as regex manipulation.
 License: GPL-3

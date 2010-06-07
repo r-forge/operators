@@ -19,8 +19,9 @@ License: \tab GPL-3\cr
 }
 \author{
 Romain Francois <romain@r-enthusiasts.com>
+Christopher Brown <cbrown@opendatagroup.com>
 
-Maintainer: Romain Francois <romain@r-enthusiasts.com>
+Maintainer: Romain Francois and Christopher Brown <operators-authors@r-enthusiasts.com>
 }
 \keyword{ package }
 
