@@ -1,0 +1,20 @@
+
+2010-06-01
+ - ChangeLog: Added this file.
+
+# CODE
+ - R/extraOperators.R: renamed from operators.R to allow the operators function to be in R/operators.R
+ - R/operators.R: added. 
+ - R/as.operators.R: added.
+ - R/is.operator.R: added.
+ - R/can.operator.R: added.
+ 
+
+# DOCUMENTATION
+ - man/operators.Rd: added.
+ - man/is.operator.Rd: added documentation for is.operator, can.operator and as.operator
+ - man/operators-package: Removed alias operators as it conflicts with the operators method.
+
+ - NAMESPACE: added exports of is.operator, as.operator, can.operator and operators.
+
+
