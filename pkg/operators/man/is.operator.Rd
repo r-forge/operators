@@ -3,6 +3,7 @@
 
 \alias{is.operator}
 \alias{is.operator-methods}
+\alias{is.operator,function-method}
 \alias{is.operator,ANY-method}
 
 \alias{can.operator}
@@ -21,13 +22,20 @@
   Utilities for operators
 }
 \description{
-  \code{is.operator} tests whether the object is a defined
-  \code{\link{operators}}.  \code{can.operator} tests whether the object
-  can be coerced to an operators.  \code{as.operator} coerced the object
-  to an operator.
+  These are S4 methods are utilies for working with operators.  In R,
+  operators are functions with special syntax.
+
+  \code{is.operator} tests whether the object is one of the defined 
+  \code{\link{operators}}.  
+  
+  \code{can.operator} tests whether the object can be coerced to an 
+  operator.  
+  
+  \code{as.operator} coerced the object to an operator.
   
   Optionally, you can specify one of the that it tests for a specific 
   type of operator.  See details, below.
+
 }
 
 \usage{
@@ -75,7 +83,9 @@
 }
 
 \seealso{
-  \code{\link{operators}}, \code{\link{apropos}}, \code{\link{find}} 
+  \code{\link{operators}}, \code{\link{apropos}}, 
+  \code{\link{S4groupGeneric}}
+
 }
 
 \examples{ 

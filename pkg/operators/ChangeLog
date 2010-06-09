@@ -1,3 +1,10 @@
+2010-06-10
+ - R/is.operator.R: changed to more robust test using `identical`
+ - R.runit.is.operator.R: added to test is.operators, can.operators and as.operator functions.
+   - Tests known operator list
+   - Tests all other names so that they are not operators
+ - DESCRIPTION: reflects utilities as core addition to the project
+ - man/operators-package.Rd: updated
 
 2010-06-01
  - ChangeLog: Added this file.

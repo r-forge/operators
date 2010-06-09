@@ -2,5 +2,6 @@
 0.1-7	(under development)
 
 	o	Christopher Brown has joined the project
-    o   Added utilities: operators, is.operator, as.operator and can.operator
+    o   Added Utilities for working with operators:
+        o Added: operators, is.operator, as.operator and can.operator
 

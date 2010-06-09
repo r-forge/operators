@@ -27,3 +27,9 @@ setMethod( 'as.operator', 'character' ,
 )
 
 
+# setMethod( 'as.function', 'character', 
+#  function(x, ...) 
+#    if( x %in% apropos(x) ) eval(as.name(x)) else
+#      stop( x, " is not a defined function." )
+# )
+
