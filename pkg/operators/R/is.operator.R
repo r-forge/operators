@@ -19,13 +19,14 @@ setMethod( 'is.operator', 'function',
   function(x, ... )
     any( 
       sapply( operators(...), 
+        # function(op) identical(x,as.function(eval(as.name(op))))
         function(op) identical(x,as.function(eval(as.name(op))))
       )
     )
 )
 
 setMethod( 'is.operator', 'name', 
-  function(x,...) as.character(x) %in% operators(...)
+  function(x,...) deparse(x) %in% operators(...)
 )
 
 # ANYTHING OTHER THAN A FUNCTION RETURNS FALSE.

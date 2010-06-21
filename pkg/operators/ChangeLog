@@ -6,7 +6,7 @@
    operators by a certain type.
 
  - R/is.operator.R: 
-   + is.operator,name-method added.
+   + is.operator,name-method added.  Uses 'deparse'
    + added more operators from ?Syntax, ordered by priority
    + Changed .operators to options( 'operators' )
    + registerOperator function added.
