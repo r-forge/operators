@@ -1,8 +1,8 @@
 Package: operators
 Type: Package
 Title: Additional operators and utilities for R 
-Version: 0.1-7
-Date: 2010-06-10
+Version: 0.1-8
+Date: 2010-06-20
 Author: Romain Francois and Christopher Brown
 Maintainer: Romain Francois and Christopher Brown <operators-authors@r-enthusiasts.com>
 Depends: methods

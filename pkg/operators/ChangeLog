@@ -1,6 +1,26 @@
+2010-06-16
+ - R/operator.R:
+   Complete refactor to manage operators and types using the options 
+
+ - R/setOperator.R, man/setOperator.Rd: add ability to register 
+   operators by a certain type.
+
+ - R/is.operator.R: 
+   + is.operator,name-method added.
+   + added more operators from ?Syntax, ordered by priority
+   + Changed .operators to options( 'operators' )
+   + registerOperator function added.
+
+ - inst/options/options.R: Added options(operators)  
+
+Note: Not sure that creating another options function(operators::options)
+is such a great idea.
+
+
 2010-06-10
  - R/is.operator.R: changed to more robust test using `identical`
- - R.runit.is.operator.R: added to test is.operators, can.operators and as.operator functions.
+ - R.runit.is.operator.R: added to test is.operators, can.operators and 
+   as.operator functions.
    - Tests known operator list
    - Tests all other names so that they are not operators
  - DESCRIPTION: reflects utilities as core addition to the project

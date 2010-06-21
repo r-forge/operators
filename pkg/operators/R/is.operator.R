@@ -2,7 +2,7 @@
 # is.operator: 
 #  function to test if argument is an operator, optionally of certain
 #  'types'.
-#
+#  a
 #  is.operator returns TRUE if x is a function and matched the core 
 #  or %.% operators
 # 
@@ -24,6 +24,9 @@ setMethod( 'is.operator', 'function',
     )
 )
 
+setMethod( 'is.operator', 'name', 
+  function(x,...) as.character(x) %in% operators(...)
+)
 
 # ANYTHING OTHER THAN A FUNCTION RETURNS FALSE.
 setMethod( 'is.operator', 'ANY',

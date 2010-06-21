@@ -1,0 +1,14 @@
+
+ - For operators utilities, is.operator, as.operator, can.operator, and class 
+   expression, the operator is not recognized
+
+      e <- expression( A > 5 )
+      c <- e[[1]]
+      class(c) 
+      c[[1]]
+      > class(c[[1]])
+      [1] "name"
+
+      e <- quote( A > 5 )
+      class(e[[1]])
+
