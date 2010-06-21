@@ -1,9 +1,7 @@
 
-# .operators:
+# options(operators):
 #   a list of the basic operators not including defined as specials
-#   use operators to get a list of operators including defined operators
-
-# THIS IS THE CORE LIST OF OPERATORS:
+#   use operators() to get a list of operators including defined operators
 # NB. base::options( operators ) is set in inst/options/options.R
 
 
@@ -55,33 +53,5 @@ operators <- function( types=NULL ) {
    return( ops )
     
 }
-
-
-# ---------------------------------------------------------------------
-# FUNCTION: operator.types
-#   Return the operator.type for a given operator
-#
-#   What is op is a function.
-#
-# ---------------------------------------------------------------------
-operator.type <- function( op ) {
-  
-  op <- as.character( op )
-  operators <- getOption( 'operators' )
-
-  # Create operator list for standard operators.
-  # invert type => operator list 
-  # types <- list()
-  for( type in names(operators) )
-    if ( op %in% operators[[type]] ) return(type) 
-
-  if( op %in% operators() ) 
-    return( "special" )
-
-  NULL
-
-}
-
-
 
 

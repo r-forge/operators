@@ -1,3 +1,6 @@
+2010-06-21
+ - R/operator.type.R: refactored as S4 method
+
 2010-06-16
  - R/operator.R:
    Complete refactor to manage operators and types using the options 
@@ -13,7 +16,7 @@
 
  - inst/options/options.R: Added options(operators)  
 
-Note: Not sure that creating another options function(operators::options)
+CB: Not sure that creating another options function(operators::options)
 is such a great idea.
 
 

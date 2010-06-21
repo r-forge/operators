@@ -46,5 +46,6 @@ export( "strrep" )
 S3method( "print", "unixoutput" )
 
 # Utility functions
-export( 'operators' )
+export( 'operators', 'operator.type'  )
 exportMethods( as.operator, can.operator, is.operator )
+
