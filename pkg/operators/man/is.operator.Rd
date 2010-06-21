@@ -4,6 +4,7 @@
 \alias{is.operator}
 \alias{is.operator-methods}
 \alias{is.operator,function-method}
+\alias{is.operator,name-method}
 \alias{is.operator,ANY-method}
 
 \alias{can.operator}

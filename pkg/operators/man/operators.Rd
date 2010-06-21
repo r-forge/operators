@@ -1,14 +1,12 @@
 \name{operators}
 \Rdversion{1.1}
 \alias{operators}
-\alias{.operators}
 \title{
-  Return the _names_ of defined operators
+  Return the names of defined operators
 }
+
 \description{
-  \code{operators} returns the names of defined operators. These
-  include arithmetic, range, colon, relational, logical, tilde, 
-  assignment and/or special.
+  \code{operators} returns the names of defined operators. 
 }
 
 \usage{
@@ -18,29 +16,45 @@
 
 \arguments{
   \item{types}{   
-  A character vector with types of operators to return. The types may 
-  be: 'arithmetic', 'range', 'colon', 'relational', 'logical', 'tilde', 
-  'assignment','special', 'all' or NULL.  Default: NULL. 
+    A character vector with types of operators to return. The types may 
+    one or more of: \code{'namespace'}, \code{'component'}, \code{'indexing'}, 
+    \code{'sequence'}, \code{'arithmetic'}, \code{'relational'}, 
+    \code{'logical'}, \code{'tilde'}, \code{'assignment'}, \code{'help'} 
+    or one of the special groups: \code{'ALL'}, \code{'CORE'}, 
+    \code{'SPECIAL'}, \code{'USER'}
   }
 }
 
 
 \details{
-   \code{operators} provides  names of operators.  By default or 
-   when \code{types="all"}, all operators are returned.  Otherwise,
-   \code{types} will provide one or more of the following:
-      arithmetic: + - * / ^ %% %/%
-      range: :
-      colon: :: :::
-      relational: < > <= >= == != %in% %!in%
-      logical: ! & && | ||
-      tilde: ~
-      assignment: <- <<- -> ->> =
-      special: ( see below )
+  \code{operators} provides the \bold{names} of defined operators. 
+  These can be either CORE language operators or 'SPECIAL' operators
+  defined by the \code{\%any\%} syntax.  By default, i.e. when 
+  \code{types=NULL}, all operators are returned.  
 
-   When \code{types="special"}, \code{operators} searches to find 
-   operators that are defined with the %.*% syntax. Note that 
-   \code{operators} searches for special functions each call.
+  The core operators are:
+  \tabular{rr}{
+      namespace  \tab :: ::: \cr
+      component  \tab @ $ \cr
+      indexing   \tab \[ \[\[ \cr 
+      sequence   \tab : \cr
+      arithmetic \tab + - * / ^ \%\% \%/\% \cr
+      relational \tab < > <= >= == != \%in\% \%!in\% \cr
+      logical    \tab ! & && | || \cr
+      tilde      \tab ~ \cr
+      assignment \tab <- <<- -> ->> = \cr
+      help       \tab ? \cr
+   }
+
+   \code{types} may also be one a special operator groupings:
+   \itemize{
+      \item ALL: same as \code{types=NULL}
+      \item CORE: only base R operators and those registers using
+            \code{\link{setOperator}}
+      \item SPECIAL: All operators defined using the \code{\%any\%}
+            syntax
+      \item USER: All SPECIAL operators not including CORE 
+   }
 
 }
 
@@ -55,7 +69,7 @@
   is not an operator but a syntatic variant.  Consequently, it 
   does not behave properly as an operator.  They are
   omitted from the operator list as they are not correctly 
-  identified as primitives by R.
+  identified as primitives or functions by the R language.
 }
 
 \references{
@@ -69,7 +83,8 @@
 }
 
 \seealso{
-  The individual help files about the operators, perhaps
+  \code{\link{Syntax}}, \code{\link{setOperator}}, and help files 
+  on varios operators
 }
 
 \examples{
@@ -77,9 +92,11 @@
   operators()
   operators( types="arithmetic" )
   operators( types=c("arithmetic","logical" ) )
-  operators( types=c("special") )
+  operators( types='ALL' )
+  operators( types='CORE' )
+  operators( types='SPECIAL' )
+  operators( types='USER' )
 
 }
 
 \keyword{ utilities }
-\keyword{ data }

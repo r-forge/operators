@@ -11,8 +11,8 @@ Operators for common tasks (e.g. regex manipulation) and utilities for working w
   \tabular{ll}{
     Package: \tab operators\cr
     Type: \tab Package\cr
-    Version: \tab 0.1-7\cr
-    Date: \tab 2010-06-10\cr
+    Version: \tab 0.1-8\cr
+    Date: \tab 2010-06-20\cr
     License: \tab GPL-3\cr
   }
 }
